@@ -1,6 +1,6 @@
 {
   "name": "talk-like-a-pirate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translate text into pirate-speek",
   "main": "index.js",
   "scripts": {
