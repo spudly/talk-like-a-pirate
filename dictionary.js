@@ -19,5 +19,5 @@ module.exports = {
   yes: ['yarr', 'aye'],
   are: 'be',
   change: 'alter',
-  folds: 'mateys'
+  folks: 'mateys'
 };
