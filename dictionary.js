@@ -1,0 +1,23 @@
+module.exports = {
+  comes: 'hails',
+  friends: 'crew',
+  your: 'ye',
+  you: 'ye',
+  right: 'starboard',
+  woman: 'wench',
+  lawyer: 'scurvy land lubber',
+  hello: ['ahoy', 'avast'],
+  the: ['ye', 'yonder', 'thar'],
+  girl: 'lass',
+  is: 'be',
+  "it's": 'it be',
+  boy: 'cabin boy',
+  person: 'landlubber',
+  friend: 'mate',
+  beer: 'grog',
+  left: 'port',
+  yes: ['yarr', 'aye'],
+  are: 'be',
+  change: 'alter',
+  folds: 'mateys'
+};

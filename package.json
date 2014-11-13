@@ -1,0 +1,31 @@
+{
+  "name": "talk-like-a-pirate",
+  "version": "0.0.0",
+  "description": "Translate text into pirate-speek",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --ui exports ./test.js",
+    "build": "./node_modules/browserify/bin/cmd.js -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
+    "lint": "./node_modules/jshint/bin/jshint index.js dictionary.js test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spudly/talk-like-a-pirate.git"
+  },
+  "keywords": [
+    "pirate"
+  ],
+  "author": "Stephen Sorensen <shuoink@gmail.com> (http://www.stephenjohnsorensen.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spudly/talk-like-a-pirate/issues"
+  },
+  "homepage": "https://github.com/spudly/talk-like-a-pirate",
+  "devDependencies": {
+    "browserify": "^6.3.2",
+    "chai": "^1.10.0",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "sinon": "^1.11.1"
+  }
+}
