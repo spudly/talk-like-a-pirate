@@ -20,7 +20,8 @@ module.exports = {
   yes: ['yarr', 'aye'],
   are: 'be',
   change: 'alter',
-  folks: 'mateys'
+  folks: 'mateys',
+  should: 'shall'
 };
 
 },{}],2:[function(require,module,exports){
