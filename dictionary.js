@@ -19,5 +19,6 @@ module.exports = {
   yes: ['yarr', 'aye'],
   are: 'be',
   change: 'alter',
-  folks: 'mateys'
+  folks: 'mateys',
+  should: 'shall'
 };
