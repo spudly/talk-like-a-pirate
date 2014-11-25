@@ -1,7 +1,7 @@
 {
   "name": "talk-like-a-pirate",
   "version": "1.0.3",
-  "description": "Translate text into pirate-speek",
+  "description": "Translate text into pirate-speak",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --ui exports ./test.js",
