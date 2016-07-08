@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/spudly/talk-like-a-pirate",
   "devDependencies": {
-    "browserify": "^6.3.2",
-    "chai": "^1.10.0",
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
     "sinon": "^1.11.1"
