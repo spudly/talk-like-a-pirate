@@ -4,9 +4,10 @@
   "description": "Translate text into pirate-speak",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --ui exports ./test.js",
-    "build": "./node_modules/browserify/bin/cmd.js -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
-    "lint": "./node_modules/jshint/bin/jshint index.js dictionary.js test.js"
+    "test": "mocha --ui exports ./test.js",
+    "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
+    "lint": "jshint index.js dictionary.js test.js",
+    "prepublish": "npm run build",
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,10 @@
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
     "sinon": "^1.11.1"
-  }
+  },
+  "files": [
+    "index.js",
+    "dictionary.js",
+    "talk-like-a-pirate.js"
+  ]
 }
