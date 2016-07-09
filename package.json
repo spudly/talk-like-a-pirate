@@ -7,7 +7,7 @@
     "test": "mocha --ui exports ./test.js",
     "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
     "lint": "jshint index.js dictionary.js test.js",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
