@@ -1,13 +1,13 @@
 {
   "name": "talk-like-a-pirate",
-  "version": "1.0.4",
   "description": "Translate text into pirate-speak",
   "main": "index.js",
   "scripts": {
     "test": "mocha --ui exports ./test.js",
     "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
     "lint": "jshint index.js dictionary.js test.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,8 @@
     "chai": "^3.5.0",
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
-    "sinon": "^1.11.1"
+    "sinon": "^1.11.1",
+    "semantic-release": "^4.3.5"
   },
   "files": [
     "index.js",
