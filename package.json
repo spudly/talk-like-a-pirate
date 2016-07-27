@@ -3,7 +3,7 @@
   "description": "Translate text into pirate-speak",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --ui exports ./test.js",
+    "test": "npm run lint && mocha --ui exports ./test.js",
     "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
     "lint": "eslint index.js dictionary.js test.js",
     "prepublish": "npm run build",
