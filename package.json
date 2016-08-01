@@ -26,7 +26,7 @@
     "@spudly/eslint-config": "^0.1.1",
     "browserify": "^13.0.1",
     "chai": "^3.5.0",
-    "mocha": "^2.0.1",
+    "mocha": "^3.0.0",
     "semantic-release": "^4.3.5",
     "sinon": "^1.11.1",
     "babel-eslint": "^6.1.2",
