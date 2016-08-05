@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npm run lint && mocha --ui exports ./test.js",
     "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
-    "lint": "eslint index.js dictionary.js test.js",
+    "lint": "lint index.js dictionary.js test.js",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -23,20 +23,12 @@
   },
   "homepage": "https://github.com/spudly/talk-like-a-pirate",
   "devDependencies": {
-    "@spudly/eslint-config": "^0.1.1",
+    "@spudly/eslint-config": "^2.1.1",
     "browserify": "^13.0.1",
     "chai": "^3.5.0",
     "mocha": "^3.0.0",
     "semantic-release": "^4.3.5",
-    "sinon": "^1.11.1",
-    "babel-eslint": "^6.1.2",
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-ava": "^2.5.0",
-    "eslint-plugin-import": "^1.11.1",
-    "eslint-plugin-jsx-a11y": "^1.5.5",
-    "eslint-plugin-lodash-fp": "^1.3.0",
-    "eslint-plugin-react": "^5.2.2"
+    "sinon": "^1.11.1"
   },
   "files": [
     "index.js",
