@@ -3,7 +3,7 @@ const dictionary = require('./dictionary');
 const isUpperCase = char => char.toUpperCase() === char;
 
 const talkLikeAPirate = str => str.replace(/[\w']+/ig, match => {
-  let replacement = dictionary[match.toLowerCase()];
+  const replacement = dictionary[match.toLowerCase()];
 
   if (!replacement) {
     return match;
@@ -11,11 +11,11 @@ const talkLikeAPirate = str => str.replace(/[\w']+/ig, match => {
 
   if (Array.isArray(replacement)) {
     // get array element at random
-    replacement = replacement[Math.floor(Math.random() * replacement.length)];
+    return replacement[Math.floor(Math.random() * replacement.length)];
   }
 
   if (isUpperCase(match[0])) {
-    replacement = replacement[0].toUpperCase() + replacement.slice(1);
+    return replacement[0].toUpperCase() + replacement.slice(1);
   }
 
   return replacement;
