@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/spudly/talk-like-a-pirate",
   "devDependencies": {
-    "@spudly/eslint-config": "^3.0.0",
+    "@spudly/eslint-config": "^4.0.0",
     "browserify": "^13.0.1",
     "chai": "^3.5.0",
     "mocha": "^3.0.0",
