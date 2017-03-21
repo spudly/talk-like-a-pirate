@@ -37,6 +37,7 @@
     "talk-like-a-pirate.js"
   ],
   "eslintConfig": {
-    "extends": "@spudly"
+    "extends": "@spudly",
+    "sourceType": "script"
   }
 }
