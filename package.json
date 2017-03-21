@@ -38,6 +38,8 @@
   ],
   "eslintConfig": {
     "extends": "@spudly",
-    "sourceType": "script"
+    "parserOptions": {
+      "sourceType": "script"
+    }
   }
 }
