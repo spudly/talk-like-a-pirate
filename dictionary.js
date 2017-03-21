@@ -7,6 +7,7 @@ module.exports = {
   woman: 'wench',
   lawyer: 'scurvy land lubber',
   hello: ['ahoy', 'avast'],
+  hi: ['ahoy', 'avast'],
   the: ['ye', 'yonder', 'thar'],
   girl: 'lass',
   is: 'be',
