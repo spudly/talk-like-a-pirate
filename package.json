@@ -35,5 +35,8 @@
     "index.js",
     "dictionary.js",
     "talk-like-a-pirate.js"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "@spudly"
+  }
 }
