@@ -3,7 +3,7 @@
   "description": "Translate text into pirate-speak",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && mocha --ui exports ./test.js",
+    "test": "npm run lint && jest",
     "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
     "lint": "eslint index.js dictionary.js test.js",
     "prepublish": "npm run build",
@@ -26,11 +26,10 @@
   "devDependencies": {
     "@spudly/eslint-config": "^4.0.0",
     "browserify": "^14.1.0",
-    "chai": "^3.5.0",
     "eslint": "^3.18.0",
     "husky": "^0.13.2",
+    "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
-    "mocha": "^3.0.0",
     "prettier": "^0.22.0",
     "semantic-release": "^6.3.2",
     "sinon": "^2.0.0"
