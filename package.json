@@ -7,7 +7,8 @@
     "build": "browserify -s talkLikeAPirate ./index.js > ./talk-like-a-pirate.js",
     "lint": "eslint index.js dictionary.js test.js",
     "prepublish": "npm run build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,14 @@
   },
   "homepage": "https://github.com/spudly/talk-like-a-pirate",
   "devDependencies": {
-    "eslint": "^3.18.0",
     "@spudly/eslint-config": "^4.0.0",
     "browserify": "^14.1.0",
     "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "husky": "^0.13.2",
+    "lint-staged": "^3.4.0",
     "mocha": "^3.0.0",
+    "prettier": "^0.22.0",
     "semantic-release": "^6.3.2",
     "sinon": "^2.0.0"
   },
@@ -41,5 +45,12 @@
     "parserOptions": {
       "sourceType": "script"
     }
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "eslint --fix",
+      "prettier --write --print-width=100 --single-quote --bracket-spacing=false",
+      "git add"
+    ]
   }
 }
