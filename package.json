@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/spudly/talk-like-a-pirate",
   "devDependencies": {
-    "@spudly/eslint-config": "^5.0.2",
+    "@spudly/eslint-config": "^5.0.3",
     "browserify": "^14.1.0",
     "eslint": "^3.18.0",
     "husky": "^0.13.2",
